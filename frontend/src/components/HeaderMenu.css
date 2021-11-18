@@ -20,7 +20,7 @@ input {
 }
 
 .Logo {
-    margin: 10px 0px 0px 20px;
+    margin: 10px 0px 10px 30px;
 }
 
 ul {
@@ -40,21 +40,37 @@ a:hover {
 }
 
 .Nav {
-    background-color: #E62D17;
-    padding:10px;
+    background-color: #E65B00;
+    padding:0 10px;
     display: flex;
     justify-content: space-between;
 }
 
 .Menu {
     display: flex;
-    gap: .9rem;
     list-style: none;
+}
+
+.Menu li {
+    margin: 10px 0;
+}
+
+.Menu a {
+    height: 100%;
+    padding: 10px 15px;
 }
 
 .Login {
     margin-right: 10px;
     display: flex;
-    gap: .9rem;
     list-style: none;
+}
+
+.Login li {
+    margin: 10px;
+}
+
+.Login a {
+    height: 100%;
+    padding: 10px 15px;
 }
