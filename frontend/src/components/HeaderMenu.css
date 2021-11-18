@@ -1,0 +1,60 @@
+header {
+    background-color: #01DBE6;
+    margin: 0px;
+    padding: 0px;
+    height: 120px;
+    width: 100%;
+    display: flex;
+}
+
+input {
+    border: none;
+    box-shadow:  1px 2px 5px rgba(32, 32, 32, 0.322);
+    margin-top: auto;
+    margin-bottom: auto;
+    height: 40px;
+    margin-left: 60px;
+    width: 40%;
+    font-family: 'Urbanist';
+    font-size: 1.3rem;
+}
+
+.Logo {
+    margin: 10px 0px 0px 20px;
+}
+
+ul {
+    margin: 0px;
+    padding: 0px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+
+}
+
+a:hover {
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.Nav {
+    background-color: #E62D17;
+    padding:10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.Menu {
+    display: flex;
+    gap: .9rem;
+    list-style: none;
+}
+
+.Login {
+    margin-right: 10px;
+    display: flex;
+    gap: .9rem;
+    list-style: none;
+}
