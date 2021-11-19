@@ -1,0 +1,153 @@
+.CampoLogin div {
+    width: fit-content;
+}
+
+.CampoLogin {
+    margin: 50px auto 0px auto;
+    background-color: orange;
+    box-shadow:  1px 2px 5px rgba(32, 32, 32, 0.322);
+    padding: 10px 25px 25px 25px;
+    border-radius: 10px;
+    width: fit-content;
+}
+
+.CampoLogin input {
+    margin-top: 5px;
+    border: none;
+    box-shadow: 1px 2px 5px rgba(32, 32, 32, 0.322);
+    height: 40px;
+    font-family: 'Urbanist';
+    font-size: 1.3rem;
+    /* width: 400px;
+    margin-right: 300px; */
+    display: block;
+    padding-left: 10px;
+}
+
+ .CampoLogin label {
+    text-align: left;
+    font-weight: bold;
+    font-size: 22px;
+    display: block;
+}
+
+.Nome {
+    margin-right: 20px;
+    display: block;
+}
+
+.Nome input {
+    width: 450px;
+}
+
+.CPFCNPJ input {
+    width: 450px;
+}
+
+.CEP {
+    margin-right: 20px;
+}
+
+.CEP input {
+    width: 200px;
+}
+
+.Endereco {
+    margin-right: 20px;
+}
+
+.Endereco input {
+    width: 545px;
+}
+
+.Numero input {
+    width: 120px;
+}
+
+.Cidade {
+    margin-right: 20px;
+}
+
+.Cidade input{
+    width: 350px;
+}
+.Estado {
+    margin-right: 20px;
+}
+.Estado input{
+    width: 120px;
+}
+
+.Complemento input {
+    width: 400px;
+}
+
+.Email {
+    margin-right: 20px;
+}
+
+.Email input {
+    width: 450px;
+}
+.Senha input {
+    width: 450px;
+}
+
+.linha {
+    display: flex;
+    margin-top: 15px;
+}
+/*
+
+.Email {
+    margin: 0px;
+}
+
+.Senha  {
+    margin-bottom: 0px;
+    margin-top: 20px;
+}
+
+.Esqueci {
+    margin: 10px 0px 0px 0px;
+    font-size: 16px;
+    text-align: left;
+} */
+.CampoLogin a {
+    text-decoration: none;
+}
+
+.CampoLogin a:hover{
+    text-decoration: underline;
+}
+
+.Botoes {
+    width: 980px;
+    margin: 20px auto 0px auto;
+}
+
+.Botoes button {
+    font-family: 'Urbanist';
+    font-size: 18px;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    box-shadow:  1px 2px 5px rgba(32, 32, 32, 0.322);
+    font-weight: bolder;
+}
+
+.Continuar {
+    background-color: palegreen;
+    margin-right: 10px;
+}
+
+.Continuar:active{
+    background-color: rgb(0, 233, 0);
+}
+.Cancelar {
+    background-color: plum;
+}
+
+.Cancelar:active {
+    background-color: rgb(173, 93, 173);
+}

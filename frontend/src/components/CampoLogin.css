@@ -1,0 +1,82 @@
+.CampoLogin {
+    display: column;
+    width: fit-content;
+    margin: 50px auto 0px auto;
+    text-align: center;
+    background-color: orange;
+    box-shadow:  1px 2px 5px rgba(32, 32, 32, 0.322);
+    padding: 25px;
+    border-radius: 10px;
+}
+
+.CampoLogin input {
+    margin-top: 5px;
+    border: none;
+    box-shadow: 1px 2px 5px rgba(32, 32, 32, 0.322);
+    height: 40px;
+    width: 800px;
+    font-family: 'Urbanist';
+    font-size: 1.3rem;
+    display: block;
+}
+
+.CampoLogin label {
+    display: block;
+    text-align: left;
+    font-weight: bold;
+    font-size: 22px;
+
+}
+
+.Email {
+    margin: 0px;
+}
+
+.Senha  {
+    margin-bottom: 0px;
+    margin-top: 20px;
+}
+
+.Esqueci {
+    margin: 10px 0px 0px 0px;
+    font-size: 16px;
+    text-align: left;
+}
+.CampoLogin a {
+    text-decoration: none;
+}
+
+.CampoLogin a:hover{
+    text-decoration: underline;
+}
+
+.Botoes {
+    width: 850px;
+    margin: 20px auto 0px auto;
+}
+
+.Botoes button {
+    font-family: 'Urbanist';
+    font-size: 18px;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    box-shadow:  1px 2px 5px rgba(32, 32, 32, 0.322);
+    font-weight: bolder;
+}
+
+.Continuar {
+    background-color: palegreen;
+    margin-right: 10px;
+}
+
+.Continuar:active{
+    background-color: rgb(0, 233, 0);
+}
+.Cancelar {
+    background-color: plum;
+}
+
+.Cancelar:active {
+    background-color: rgb(173, 93, 173);
+}

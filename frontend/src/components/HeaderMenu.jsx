@@ -3,14 +3,15 @@ import './HeaderMenu.css'
 import Facebook from '../img/facebook64x64.png'
 import Instagram from '../img/instagram64x64.png'
 import Akitem from '../img/Akitem100px.png'
+
 export default function HeaderMenu () {
     return (
         <>
-                <header>
+                <header className='HeaderMenu'>
                     <img className='Logo' src={Akitem} alt="LOGO"/>
                     {/* <figure className='Social'><img  src={Facebook} alt="Facebook" /></figure>
                     <img className='Social' src={Instagram} alt="Instagram" /> */}
-                    <input type="text" />
+                    <input ClassName='Pesquisa'type="text"/>
                 </header>
                 <nav className='Nav'>
                     <ul className='Menu'>

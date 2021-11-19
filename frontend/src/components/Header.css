@@ -1,0 +1,12 @@
+header {
+    background-color: #01DBE6;
+    margin: 0px;
+    padding: 0px;
+    height: 120px;
+    width: 100%;
+    display: flex;
+}
+
+.Logo {
+    margin: 10px 0px 10px 30px;
+}
