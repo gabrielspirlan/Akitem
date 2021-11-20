@@ -2,6 +2,8 @@ import React from "react"
 import HeaderMenu from "../components/HeaderMenu"
 import CardProduto from "../components/CardProduto"
 import Produtos from "../data/Produtos"
+import './Home.css'
+import Footer from "../components/Footer.jsx"
 
 export default function Home() {
 
@@ -14,7 +16,8 @@ export default function Home() {
     return(
         <>
             <HeaderMenu></HeaderMenu>
-            {produtos}
+            <div className='TodosProdutos'>{produtos}</div>
+            <Footer></Footer>
         </>
     )
 }
