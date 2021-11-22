@@ -1,5 +1,7 @@
+@import url('../data/Variaveis.css');
+
 header {
-    background-color: #01DBE6;
+    background-color: var(--cor-principal);
     margin: 0px;
     padding: 0px;
     height: 120px;

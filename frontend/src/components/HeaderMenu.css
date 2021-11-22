@@ -1,5 +1,7 @@
+@import url('../data/Variaveis.css');
+
 header {
-    background-color: #01DBE6;
+    background-color: var(--cor-principal);
     margin: 0px;
     padding: 0px;
     height: 120px;
@@ -33,7 +35,6 @@ a {
     color: white;
     text-decoration: none;
     font-size: 1.2rem;
-
 }
 
 a:hover {
@@ -41,7 +42,7 @@ a:hover {
 }
 
 .Nav {
-    background-color: #E65B00;
+    background-color: var(--cor-principal-escura);
     padding:0 10px;
     display: flex;
     justify-content: space-between;
@@ -61,17 +62,17 @@ a:hover {
     padding: 10px 15px;
 }
 
-.Login {
+.LoginH {
     margin-right: 10px;
     display: flex;
     list-style: none;
 }
 
-.Login li {
+.LoginH li {
     margin: 10px;
 }
 
-.Login a {
+.LoginH a {
     height: 100%;
     padding: 10px 15px;
 }

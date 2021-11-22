@@ -1,6 +1,9 @@
+@import url('../data/Variaveis.css');
+
 .Footer {
     margin-top: 30px;
-    background-color: blue;
+    margin-bottom: 0px;
+    background-color: var(--cor-principal);
     padding: 20px;
     display: flex;
 }

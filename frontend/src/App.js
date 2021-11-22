@@ -1,13 +1,15 @@
-// import './App.css';
-// import Cadastro from './pages/Cadastro';
+import './App.css';
+
+import Cadastro from './pages/Cadastro';
 //  import Home from './pages/Home';
-//  import Login from './pages/Login'
-import PageProduto from "./pages/PageProduto";
+// import Login from './pages/Login'
+// import PageProduto from "./pages/PageProduto";
+
 function App() {
   return (
     <div className="App">
-      <PageProduto/>
-      {/* <Cadastro/> */}
+      {/* <PageProduto/> */}
+      <Cadastro/>
         {/* <Home/> */}
        {/* <Login/> */}
     </div>

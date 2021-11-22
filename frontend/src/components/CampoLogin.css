@@ -1,12 +1,19 @@
+@import url('../data/Variaveis.css');
+
+.Login {
+    width: fit-content;
+    margin: 40px auto auto auto;
+}
+
+
 .CampoLogin {
     display: column;
-    width: fit-content;
-    margin: 50px auto 0px auto;
     text-align: center;
-    background-color: orange;
+    border: var(--cor-bordas);
     box-shadow:  1px 2px 5px rgba(32, 32, 32, 0.322);
     padding: 25px;
     border-radius: 10px;
+    width: fit-content;
 }
 
 .CampoLogin input {
@@ -16,8 +23,9 @@
     height: 40px;
     width: 800px;
     font-family: 'Urbanist';
-    font-size: 1.3rem;
+    font-size: 20px;
     display: block;
+    padding-left: 10px;
 }
 
 .CampoLogin label {
@@ -25,37 +33,36 @@
     text-align: left;
     font-weight: bold;
     font-size: 22px;
-
 }
 
-.Email {
+.CampoLogin .Email {
     margin: 0px;
 }
 
-.Senha  {
+.CampoLogin .Senha  {
     margin-bottom: 0px;
     margin-top: 20px;
 }
 
-.Esqueci {
+.CampoLogin .Esqueci {
     margin: 10px 0px 0px 0px;
     font-size: 16px;
     text-align: left;
 }
 .CampoLogin a {
     text-decoration: none;
+    color: black;
 }
 
 .CampoLogin a:hover{
     text-decoration: underline;
 }
 
-.Botoes {
-    width: 850px;
-    margin: 20px auto 0px auto;
+.Login .Botoes {
+    margin-top: 20px;
 }
 
-.Botoes button {
+.Login .Botoes button {
     font-family: 'Urbanist';
     font-size: 18px;
     padding: 10px;
@@ -65,18 +72,47 @@
     font-weight: bolder;
 }
 
-.Continuar {
-    background-color: palegreen;
+.Login .Botoes .Continuar {
+    background-color: var(--cor-botao-azul);
     margin-right: 10px;
 }
 
-.Continuar:active{
-    background-color: rgb(0, 233, 0);
+.Login .Botoes .Continuar:active{
+    background-color: var(--cor-botao-azul-clique);
 }
-.Cancelar {
-    background-color: plum;
+.Login .Botoes .Cancelar {
+    background-color: var(--cor-botao-vermelho);
 }
 
-.Cancelar:active {
-    background-color: rgb(173, 93, 173);
+.Login .Cancelar:active {
+    background-color: var(--cor-botao-vermelho-clique);
+}
+
+
+@media screen and (max-width: 900px) {
+    .CampoLogin input{
+        width: 600px;
+    }
+}
+
+
+@media screen and (max-width: 700px) {
+    .CampoLogin input{
+        width: 400px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .CampoLogin input{
+        width: 300px;
+        font-size: 20px;
+    }
+}
+
+
+@media screen and (max-width: 400px) {
+    .CampoLogin input{
+        width: 200px;
+        font-size: 16px;
+    }
 }

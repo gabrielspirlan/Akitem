@@ -1,0 +1,13 @@
+:root {
+    --cor-principal: #00D69F;
+    --cor-principal-escura: #008A67;
+    --cor-principal-clara: #19FFC6;
+    --cor-botao-vermelho: #DB4637;
+    --cor-botao-azul: #2D5C70;
+    --cor-botao-vermelho-clique: #91251d;
+    --cor-botao-azul-clique: #18303a;
+    --cor-bordas: rgba(0, 0, 0, 0.2);
+    --largura-campos-break01: 500px;
+    --largura-campos-break02: 300px;
+    --largura-campos-break03: 200px;
+}

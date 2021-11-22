@@ -3,9 +3,8 @@ import './CampoCadastro.css'
 
 export default function CampoCadastro () {
     return (
-        <>
-            <div className='CampoLogin'>
-
+        <div className='Cadastro'>
+            <div className='CampoCadastro'>
                 <div className='linha'>
                     <div className='Nome'>
                         <label>Nome</label>
@@ -55,12 +54,11 @@ export default function CampoCadastro () {
                         <input type="text" />
                     </div>
                 </div>
-                
             </div>
             <div className="Botoes">
                 <button className="Continuar">Continuar</button>
                 <button className="Cancelar">Cancelar</button>
             </div>
-        </>
+        </div>
     )
 }

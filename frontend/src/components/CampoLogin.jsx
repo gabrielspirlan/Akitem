@@ -3,7 +3,7 @@ import './CampoLogin.css'
 
 export default function CampoLogin () {
     return (
-        <>
+        <div className='Login'>
             <div className='CampoLogin'>
                 <div>
                     <label className='Email' for='email'>Email</label>
@@ -19,6 +19,6 @@ export default function CampoLogin () {
                 <button className="Continuar">Continuar</button>
                 <button className="Cancelar">Cancelar</button>
             </div>
-        </>
+        </div>
     )
 }
