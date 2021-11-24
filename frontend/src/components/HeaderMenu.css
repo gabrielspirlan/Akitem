@@ -1,51 +1,63 @@
 @import url('../data/Variaveis.css');
 
-header {
+.HeaderMenu {
     background-color: var(--cor-principal);
     margin: 0px;
     padding: 0px;
     height: 120px;
-    width: 100%;
     display: flex;
 }
 
-.HeaderMenu input {
+.MenuPrincipal input{
     border: none;
     box-shadow:  1px 2px 5px rgba(32, 32, 32, 0.322);
     margin-top: auto;
     margin-bottom: auto;
+    font-family: 'Urbanist';
+    padding-left: 10px;
+}
+
+.HeaderMenu input {
     height: 40px;
     margin-left: 60px;
-    width: 40%;
-    font-family: 'Urbanist';
-    font-size: 1.3rem;
-    padding-left: 10px;
+    width: 450px;
+    font-size: 22px;
+}
+.Nav{
+    justify-content: center;
+}
+
+.Nav input {
+    height: 30px;
+    width: 120px;
+    font-size: 20px;
+    margin-left: 10px;
+    margin-right: 40px;
 }
 
 .Logo {
     margin: 10px 0px 10px 30px;
 }
 
-ul {
+.Nav {
+    background-color: var(--cor-principal-escura);
+    padding:0 10px;
+    display: flex;
+}
+
+.Nav ul {
     margin: 0px;
     padding: 0px;
 }
 
-a {
+.Nav a {
     color: white;
     text-decoration: none;
     font-size: 1.2rem;
 }
 
-a:hover {
+.Nav a:hover {
     background-color: rgba(0, 0, 0, 0.4);
-}
-
-.Nav {
-    background-color: var(--cor-principal-escura);
-    padding:0 10px;
-    display: flex;
-    justify-content: space-between;
 }
 
 .Menu {
@@ -54,7 +66,7 @@ a:hover {
 }
 
 .Menu li {
-    margin: 10px 0;
+    margin: 10px 5px;
 }
 
 .Menu a {
@@ -62,17 +74,92 @@ a:hover {
     padding: 10px 15px;
 }
 
-.LoginH {
-    margin-right: 10px;
-    display: flex;
-    list-style: none;
+.MenuContraido{
+    position: relative;
+    display: inline-block;
 }
 
-.LoginH li {
-    margin: 10px;
+.MenuContraido input, .MenuContraido span {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
-.LoginH a {
-    height: 100%;
-    padding: 10px 15px;
+.MenuContraido input {
+    z-index: 100; /* Traz o input para cima */ 
+    opacity: 100; /* Esconde o input */
+    display: none;
+}
+
+.MenuContraido span {
+    display: block;
+    background-color: var(--cor-primaria);
+    border-radius: 4px;
+    border: 2px solid #FFFFFF;
+    background-image: url('./menu-icon-48x48.png');
+    background-size: 40px 40px;
+    background-position: center center;
+    cursor: pointer; /* Cursor de mãozinha */
+    display: none;
+}
+
+.MenuContraido input:checked ~ span {
+    /* Troca a imagem */
+    background-image: url('./close-icon-48x48.png');
+}
+
+@media screen and (max-width: 1250px) {
+    .Nav input {
+        height: 30px;
+        width: 100px;
+        font-size: 20px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+}
+@media screen and (max-width: 1200px) {
+    .Menu {
+        padding: 0 20px;
+    }
+    .Nav {
+        min-height: 88px;
+        padding: 0;
+    }
+    .Nav ul {
+        margin-top: 50px;
+    }
+    .Nav ul li {   /* Menu vertical */
+        display: block;
+        margin: 6px 0;
+    }
+    .Nav a {
+        width: 100%;
+        display: block;
+    }
+    .MenuContraido {
+        margin-top: 24px;
+        width: 100%;
+    }
+    .MenuContraido ul {
+        display: none;
+    }
+
+    .MenuContraido {
+        margin-top: 24px;
+        width: 100%;
+    }
+    .MenuContraido ul {
+        display: none;
+    }
+
+    /* Mostra o botão do menu */
+    .MenuContraido input, .MenuContraido span {
+        display: block;
+        left: 20px;
+    }
+    .MenuContraido input:checked ~ ul {
+        display: block;
+    }
 }

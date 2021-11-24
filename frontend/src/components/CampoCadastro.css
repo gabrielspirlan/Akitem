@@ -380,24 +380,18 @@
     .Cadastro .Endereco input {
         width: var(--largura-campos-break03);
     }
-    
     .Cadastro .Numero input {
         width:  var(--largura-campos-break03);
     }
-    
-    
     .Cadastro .Cidade input{
         width:  var(--largura-campos-break03);
     }
     .Cadastro .Estado input{
         width:  var(--largura-campos-break03);
     }
-    
     .Cadastro .Complemento input {
         width: var(--largura-campos-break03);
     }
-
-    
     .Cadastro .Email input {
         width: var(--largura-campos-break03);
     }

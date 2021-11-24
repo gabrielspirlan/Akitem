@@ -2,3 +2,21 @@
     display: grid;
     grid-template-columns: repeat(4, 25%);
 }
+
+@media screen and (max-width: 1170px) {
+    .TodosProdutos{
+        grid-template-columns: repeat(3, 33.3%);
+    }
+}
+
+@media screen and (max-width: 890px) {
+    .TodosProdutos{
+        grid-template-columns: repeat(2, 50%);
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .TodosProdutos{
+        grid-template-columns: repeat(1, 100%);
+    }
+}
