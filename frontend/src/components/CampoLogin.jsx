@@ -1,5 +1,6 @@
 import React from "react";
 import './CampoLogin.css'
+import { Link } from "react-router-dom";
 
 export default function CampoLogin () {
     return (
@@ -17,7 +18,7 @@ export default function CampoLogin () {
             </div>
             <div className="Botoes">
                 <button className="Continuar">Continuar</button>
-                <button className="Cancelar">Cancelar</button>
+                <Link to='/'><button className="Cancelar">Cancelar</button></Link>
             </div>
         </div>
     )

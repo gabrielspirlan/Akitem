@@ -4,12 +4,77 @@
     margin-top: 30px;
     margin-bottom: 0px;
     background-color: var(--cor-principal);
-    padding: 20px;
     display: flex;
+    justify-content: space-around;
+    padding: 10px;
+}
+
+.Footer img {
+    height: fit-content;
+    width: fit-content;
+    margin-top: auto;
+    margin-bottom: auto;
 }
 
 .Footer p {
-    margin: auto;  
-    font-size: 20px;
+    margin-top: auto;
+    margin-bottom: auto;
+    font-size: 28px;
     font-weight: bold;
+}
+
+.Footer div p {
+    margin-left: 35px;
+    margin-top: 10px;
+    margin-bottom: -10px;
+}
+
+.Footer ul li {
+    list-style: none;
+    font-size: 20px;
+}
+
+@media screen and (max-width: 1020px) {
+    .Footer {
+        justify-content: center;
+        display: block;
+        padding: 20px;
+    }
+    .Footer img {
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
+    .Footer p {
+        margin-top: 20px;
+        width: fit-content;
+        margin-left: auto;
+        margin-right: auto;
+    }
+   .Footer div {
+       width: fit-content;
+       margin-left: auto;
+       margin-right: auto;
+   }
+   .Footer div p {
+       margin-top: 20px;
+       margin-left: 0;
+       margin-right: 0;
+   }
+   .Footer ul {
+       margin-left: 0;
+       margin-right: 0;
+   }
+}
+
+@media screen and (max-width: 375px) {
+    .Footer img {
+        width: 200px;
+    }
+    .Footer p {
+        font-size: 24px;
+    }
+    .Footer ul li {
+        font-size: 18px;
+    }
 }

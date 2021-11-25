@@ -1,6 +1,6 @@
 @import url('../data/Variaveis.css');
 
-header {
+.HeaderS {
     background-color: var(--cor-principal);
     margin: 0px;
     padding: 0px;

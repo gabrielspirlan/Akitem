@@ -1,18 +1,23 @@
 import './App.css';
+import {BrowserRouter, Routes, Route, Link} from 'react-router-dom'
 
-// import Cadastro from './pages/Cadastro';
-//  import Home from './pages/Home';
-// import Login from './pages/Login'
+import Cadastro from './pages/Cadastro';
+import Home from './pages/Home';
+import Login from './pages/Login'
 import PageProduto from "./pages/PageProduto";
 
 function App() {
   return (
-    <div className="App">
-      <PageProduto/>
-      {/* <Cadastro/> */}
-        {/* <Home/> */}
-       {/* <Login/> */}
-    </div>
+      <div>
+        <BrowserRouter>
+            <Routes>
+              <Route exact path='/' element={<Home/>}/>
+              <Route exact path='/login' element={<Login/>} />
+              <Route exact path='/cadastro' element={<Cadastro/>}/>
+              <Route exact path='/produto' element={<PageProduto/>}/>
+            </Routes>
+        </BrowserRouter>
+      </div>
   );
 }
 

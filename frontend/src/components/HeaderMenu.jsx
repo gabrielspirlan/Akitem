@@ -4,31 +4,33 @@ import Facebook from '../img/facebook64x64.png'
 import Instagram from '../img/instagram64x64.png'
 import Akitem from '../img/Akitem100px.png'
 
+import { Link } from 'react-router-dom'
+
 export default function HeaderMenu () {
     return (
         <div className='MenuPrincipal'>
                 <header className='HeaderMenu'>
-                    <img className='Logo' src={Akitem} alt="LOGO"/>
-                    {/* <figure className='Social'><img  src={Facebook} alt="Facebook" /></figure>
-                    <img className='Social' src={Instagram} alt="Instagram" /> */}
-                    <input ClassName='Pesquisa'type="text" placeholder='Pesquisa'/>
+                <Link to='/'><img className='Logo' src={Akitem} alt="LOGO"/></Link>
+                    <input ClassName='Input'type="text" placeholder='Pesquisa'/>
+    
                 </header>
                 <nav className='Nav'>
-                    <input type="text" placeholder='CEP'/>
+                    
                     <div className='MenuContraido'>
                         <input type="checkbox"/>
                         <span></span>
                         <ul className='Menu'>
-                            <li><a href="/">Ofertas do dia</a></li>
-                            <li><a href="/">Floricultura</a></li>
-                            <li><a href="/">Moda</a></li>
-                            <li><a href="/">Ferramentas</a></li>
-                            <li><a href="/">Construção</a></li>
-                            <li><a href="/">Hortifruti</a></li>
-                            <li><a href="/">Cadastre-se</a></li>
-                            <li><a href="/">Login</a></li>
+                            <li><a>Ofertas do dia</a></li>
+                            <li><a>Floricultura</a></li>
+                            <li><a>Moda</a></li>
+                            <li><a >Ferramentas</a></li>
+                            <li><a>Construção</a></li>
+                            <li><a>Hortifruti</a></li>
+                            <li><Link className='Link' to='/cadastro'>Cadastre-se</Link></li>
+                            <li><Link className='Link' to='/login'>Login</Link></li>
                         </ul>
                      </div>
+                     <input className='Input' type="text" placeholder='CEP'/>
                 </nav>
         </div>
 
