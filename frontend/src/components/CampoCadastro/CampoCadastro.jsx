@@ -8,7 +8,7 @@ export default function CampoCadastro () {
                 <div className='linha'>
                     <div className='Nome'>
                         <label>Nome</label>
-                        <input type="text" />
+                        <input type="text"/>
                     </div>
                     <div className='CPFCNPJ'>
                         <label>CPF ou CNPJ</label>
@@ -18,11 +18,11 @@ export default function CampoCadastro () {
                 <div className='linha'>
                     <div className='CEP'>
                         <label>CEP</label>
-                        <input type="text" />
+                        <input id='cep' name='cep' type="text" />
                     </div>
                     <div className='Endereco'>
                         <label >Enderço</label>
-                        <input type="text" />
+                        <input type="text"/>
                     </div>
                     <div className='Numero'>
                         <label>Número</label>
@@ -60,5 +60,6 @@ export default function CampoCadastro () {
                 <Link to='/'><button className="Cancelar">Cancelar</button></Link>
             </div>
         </div>
+   
     )
 }

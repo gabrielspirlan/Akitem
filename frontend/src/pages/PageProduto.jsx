@@ -1,15 +1,13 @@
 import React from "react";
-import Produto from "../components/Produto";
-import HeaderMenu from "../components/HeaderMenu";
-import Footer from "../components/Footer";
-import Produtos from '../data/Produtos'
+import Produto from "../components/Produto/Produto";
+import HeaderMenu from "../components/Header/HeaderMenu";
+import Footer from "../components/Footer/Footer";
+import ProdutoAtual from "../data/ProdutoAtual";
 export default function () {
     return (
         <div>
             <HeaderMenu></HeaderMenu>
-            <Produto id={Produtos[0].id} nome={Produtos[0].Nome} preco={Produtos[0].Preco}
-                descricao={Produtos[0].Descricao} img={Produtos[0].img} 
-            />
+            <Produto id={ProdutoAtual[0].id} nome={ProdutoAtual[0].Nome} preco={ProdutoAtual[0].Preco} descricao={ProdutoAtual[0].Descricao} img={ProdutoAtual[0].img} />
             <Footer></Footer>
         </div>
     )

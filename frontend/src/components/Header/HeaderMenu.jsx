@@ -1,8 +1,6 @@
 import React from "react";
 import './HeaderMenu.css'
-import Facebook from '../img/facebook64x64.png'
-import Instagram from '../img/instagram64x64.png'
-import Akitem from '../img/Akitem100px.png'
+import Akitem from '../../img/Akitem100px.png'
 
 import { Link } from 'react-router-dom'
 

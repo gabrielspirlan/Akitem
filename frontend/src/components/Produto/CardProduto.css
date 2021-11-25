@@ -1,4 +1,4 @@
-@import url('../data/Variaveis.css');
+@import url('../../data/Variaveis.css');
 
 .CardProduto {
     margin: 20px auto 0px auto;
@@ -15,7 +15,7 @@
 }
 
 .CardProduto h1 {
-    margin: auto 0 0 10px;
+    margin: auto 10px 4px 10px;
     font-size: 36px;
 }
 .CardProduto p {
